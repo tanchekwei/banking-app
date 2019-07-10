@@ -20,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void register(final View view) {
-        Intent intent = new Intent(view.getContext(), MainActivity.class);
+        Intent intent = new Intent(view.getContext(), RegisterActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }

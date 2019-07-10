@@ -15,12 +15,14 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MakePaymentSelection"
-            android:theme="@style/AppTheme.ActionBar"/>
-
+        <activity
+            android:name=".MakePaymentSelection"
+            android:theme="@style/AppTheme.ActionBar" />
+        <activity android:name=".RegisterActivity"></activity>
     </application>
 
 </manifest>
