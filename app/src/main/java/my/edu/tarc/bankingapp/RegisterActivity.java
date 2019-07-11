@@ -18,6 +18,9 @@ public class RegisterActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_register);
 
+        getSupportActionBar().setTitle("Register"); // for set actionbar title
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // for add back arrow in action bar
+
         HorizontalStepView stepView = (HorizontalStepView) findViewById(R.id.step_view);
         List<Step> stepList = new ArrayList<>();
         stepList.add(new Step("General\n   Info", Step.State.CURRENT));
