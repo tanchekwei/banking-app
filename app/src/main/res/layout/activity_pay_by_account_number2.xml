@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PayByAccountNumber2Activity">
+
+    <com.vinay.stepview.HorizontalStepView
+        android:id="@+id/step_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step_view">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp">
+
+
+            <TextView
+                android:id="@+id/textView_confirm_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Selected bank"
+                android:textSize="18sp"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp" />
+
+            <TextView
+                android:id="@+id/textView_selected_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Maybank"
+                android:textSize="18sp"
+                android:textColor="@color/primaryTextColor"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/textView_name"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Account number"
+                android:textSize="18sp"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp" />
+
+            <TextView
+                android:id="@+id/textView_entered_account_number"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="6383 873 227"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/textView_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Amount"
+                android:textSize="18sp"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp" />
+
+            <TextView
+                android:id="@+id/textView_entered_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="RM 100.00"
+                android:textSize="18sp"
+                android:textColor="@color/primaryTextColor"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="next"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout3" />
+
+</android.support.constraint.ConstraintLayout>

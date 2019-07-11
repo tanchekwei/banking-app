@@ -213,4 +213,30 @@
     <string name="type">type</string>
 
     <string name="notificationType">Type</string>
+
+    <string-array name="bank_list">
+        <item>Maybank</item>
+        <item>CIMB Bank</item>
+        <item>Public Bank Berhad</item>
+        <item>RHB Bank</item>
+        <item>Hong Leong Bank</item>
+        <item>AmBank</item>
+        <item>UOB Malaysia Bank</item>
+        <item>Bank Rakyat</item>
+        <item>OCBC Bank Malaysia</item>
+        <item>HSBC Bank Malaysia</item>
+        <item>Affin Bank</item>
+        <item>Bank Islam Malaysia</item>
+        <item>Standard Chartered Bank Malaysia</item>
+        <item>CitiBank Malaysia</item>
+        <item>Bank Simpanan Nasional (BSN)</item>
+        <item>Bank Muamalat Malaysia Berhad</item>
+        <item>Alliance Bank</item>
+        <item>Agro Bank</item>
+        <item>Al-Rajhi Malaysia</item>
+        <item>MBSB Bank Berhad</item>
+        <item>Co-op Bank Pertama</item>
+    </string-array>
+    <string name="bank_prompt">Choose a bank</string>
+
 </resources>

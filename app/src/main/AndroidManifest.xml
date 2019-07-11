@@ -9,22 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
-        <activity android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"            />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".LoginActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".MakePaymentSelection"
             android:parentActivityName=".MainActivity" />
-            />
-        <activity android:name=".RegisterActivity"
+        />
+        <activity
+            android:name=".RegisterActivity"
             android:parentActivityName=".LoginActivity" />
+        <activity android:name=".PayByAccountNumber1Activity"
+            android:parentActivityName=".MakePaymentSelection" />
+        <activity android:name=".PayByAccountNumber2Activity"
+            android:parentActivityName=".PayByAccountNumber1Activity" />
+        <activity android:name=".PayByAccountNumber3Activity"
+            android:parentActivityName=".PayByAccountNumber2Activity" />
+
     </application>
 
 </manifest>
