@@ -24,7 +24,7 @@
         <activity
             android:name=".MakePaymentSelection"
             android:parentActivityName=".MainActivity" />
-        />
+
         <activity
             android:name=".RegisterActivity"
             android:parentActivityName=".LoginActivity" />
@@ -34,6 +34,10 @@
             android:parentActivityName=".PayByAccountNumber1Activity" />
         <activity android:name=".PayByAccountNumber3Activity"
             android:parentActivityName=".PayByAccountNumber2Activity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
     </application>
 
