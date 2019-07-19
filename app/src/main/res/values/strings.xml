@@ -239,10 +239,10 @@
     </string-array>
     <string name="bank_prompt">Choose a bank</string>
 
-    <string name="account_no">Account No.</string>
-    <string name="amount_rm">Amount (RM)</string>
-    <string name="tac">TAC</string>
-    <string name="resend">Resend</string>
-    <string name="send">Send</string>
-    <string name="confirm">Confirm</string>
+    <string name="bank_app">BANK</string>
+    <string name="forgot_username">Forgot User ID?</string>
+    <string name="register_account">Do not have an account? Register</string>
+    <string name="personal_phrase">Is this your personal phrase?</string>
+    <string name="default_phrase">Hong Wei Tan</string>
+
 </resources>
