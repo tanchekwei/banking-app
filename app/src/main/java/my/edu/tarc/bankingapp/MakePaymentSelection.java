@@ -27,4 +27,10 @@ public class MakePaymentSelection extends AppCompatActivity {
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
+
+    public void payToFavouriteAccount(final View view){
+        Intent intent = new Intent(view.getContext(), PayByQRActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+    }
 }

@@ -18,7 +18,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:paddingBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/step_view">
@@ -35,9 +37,9 @@
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:minHeight="50dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/ic_check_circle_green_24dp"/>
+                android:minHeight="50dp"
+                app:srcCompat="@drawable/ic_check_circle_green_24dp" />
         </TableRow>
 
         <TableRow
@@ -62,21 +64,44 @@
 
         </TableRow>
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/textView_balance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp"
+                android:text="   Your current balance is RM 2,365.23"
+                android:textAlignment="center"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="15sp" />
+
+        </TableRow>
+
     </TableLayout>
 
     <Button
         android:id="@+id/btn_next"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="7dp"
+        android:layout_marginBottom="8dp"
         android:onClick="complete"
         android:text="Back to Main Menu"
         android:textAllCaps="false"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintHeight_percent="0.1"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout3" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

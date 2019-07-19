@@ -1,10 +1,17 @@
 package my.edu.tarc.bankingapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.vinay.stepview.HorizontalStepView;
 import com.vinay.stepview.models.Step;
@@ -21,6 +28,19 @@ public class PayByAccountNumber2Activity extends AppCompatActivity {
 
         getSupportActionBar().setTitle("Pay by Account Number"); // for set actionbar title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // for add back arrow in action bar
+
+        EditText editTextTAC = (EditText) findViewById(R.id.editText_tac);
+        editTextTAC.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) || (actionId == EditorInfo.IME_ACTION_DONE)) {
+                    Intent intent = new Intent(getBaseContext(), PayByAccountNumber3Activity.class);
+//        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+                }
+                return false;
+            }
+        });
 
         HorizontalStepView stepView = (HorizontalStepView) findViewById(R.id.step_view);
         List<Step> stepList = new ArrayList<>();
@@ -40,9 +60,18 @@ public class PayByAccountNumber2Activity extends AppCompatActivity {
         ;
     }
 
-    public void next(final View view){
+    public void next(final View view) {
         Intent intent = new Intent(view.getContext(), PayByAccountNumber3Activity.class);
 //        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
+    }
+
+    public void sendTAC(final View view) {
+        EditText editTextTAC = (EditText) findViewById(R.id.editText_tac);
+        editTextTAC.requestFocus();
+        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY);
+
+        Toast.makeText(view.getContext(), "TAC sent!", Toast.LENGTH_LONG).show();
     }
 }

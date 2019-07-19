@@ -18,7 +18,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:paddingBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/step_view">
@@ -35,14 +37,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="end"
-                android:text="Select bank"
-                android:textSize="18sp"
                 android:paddingStart="0dp"
-                android:paddingEnd="20dp" />
+                android:paddingEnd="20dp"
+                android:text="Select bank"
+                android:textSize="18sp" />
 
             <Spinner
                 android:id="@+id/spinner"
-                android:layout_width="match_parent"
+                android:layout_width="194dp"
                 android:layout_height="wrap_content"
                 android:entries="@array/bank_list"
                 android:prompt="@string/bank_prompt"
@@ -59,14 +61,14 @@
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:gravity="end"
-                android:text="Account number"
-                android:textSize="18sp"
                 android:paddingStart="0dp"
-                android:paddingEnd="20dp" />
+                android:paddingEnd="20dp"
+                android:text="Account number"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/editText_name"
-                android:layout_width="184dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="number" />
         </TableRow>
@@ -81,32 +83,34 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="end"
-                android:text="Amount"
-                android:textSize="18sp"
                 android:paddingStart="0dp"
-                android:paddingEnd="20dp" />
+                android:paddingEnd="20dp"
+                android:text="Amount (RM)"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/editText_amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="numberDecimal"/>
+                android:inputType="numberDecimal" />
         </TableRow>
     </TableLayout>
 
     <Button
         android:id="@+id/btn_next"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:onClick="next"
         android:text="@string/next"
         android:textAllCaps="false"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout3" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

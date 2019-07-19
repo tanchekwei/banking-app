@@ -7,10 +7,13 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.Selection;
 import android.text.TextWatcher;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.vinay.stepview.HorizontalStepView;
 import com.vinay.stepview.models.Step;
@@ -28,6 +31,20 @@ public class PayByAccountNumber1Activity extends AppCompatActivity {
 
         getSupportActionBar().setTitle("Pay by Account Number"); // for set actionbar title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // for add back arrow in action bar
+
+        EditText editTextTAC = (EditText) findViewById(R.id.editText_amount);
+        editTextTAC.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) || (actionId == EditorInfo.IME_ACTION_DONE)) {
+                    Intent intent = new Intent(getBaseContext(), PayByAccountNumber2Activity.class);
+//        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+                }
+                return false;
+            }
+        });
+
 
         HorizontalStepView stepView = (HorizontalStepView) findViewById(R.id.step_view);
         List<Step> stepList = new ArrayList<>();

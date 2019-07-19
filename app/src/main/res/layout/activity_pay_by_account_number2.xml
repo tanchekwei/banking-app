@@ -18,7 +18,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:paddingBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/step_view">
@@ -35,10 +37,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="end"
-                android:text="Selected bank"
-                android:textSize="18sp"
                 android:paddingStart="0dp"
-                android:paddingEnd="20dp" />
+                android:paddingEnd="20dp"
+                android:text="Selected bank"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView_selected_bank"
@@ -46,8 +48,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="start"
                 android:text="Maybank"
-                android:textSize="18sp"
-                android:textColor="@color/primaryTextColor"/>
+                android:textColor="@color/primaryTextColor"
+                android:textSize="18sp" />
         </TableRow>
 
         <TableRow
@@ -60,10 +62,10 @@
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:gravity="end"
-                android:text="Account number"
-                android:textSize="18sp"
                 android:paddingStart="0dp"
-                android:paddingEnd="20dp" />
+                android:paddingEnd="20dp"
+                android:text="Account number"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView_entered_account_number"
@@ -81,14 +83,39 @@
             android:padding="10sp">
 
             <TextView
+                android:id="@+id/textView_acc_name"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp"
+                android:text="Account name"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView_entered_account_name"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Tan Yong Wei"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp">
+
+            <TextView
                 android:id="@+id/textView_amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="end"
-                android:text="Amount"
-                android:textSize="18sp"
                 android:paddingStart="0dp"
-                android:paddingEnd="20dp" />
+                android:paddingEnd="20dp"
+                android:text="Amount"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView_entered_amount"
@@ -96,24 +123,73 @@
                 android:layout_height="wrap_content"
                 android:gravity="start"
                 android:text="RM 100.00"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/textView_tac"
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp"
+                android:text="TAC"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editText_tac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/textView_tac_what"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp"
+                android:text="What is TAC?"
                 android:textSize="18sp"
-                android:textColor="@color/primaryTextColor"/>
+                android:textColor="#0B71CB"
+                android:drawableLeft="@drawable/ic_help_blue_24dp"/>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="sendTAC"
+                android:text="Request TAC"
+                android:textAllCaps="false" />
+
         </TableRow>
     </TableLayout>
 
     <Button
         android:id="@+id/btn_next"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:onClick="next"
         android:text="@string/next"
         android:textAllCaps="false"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintHeight_percent="0.1"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout3" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
