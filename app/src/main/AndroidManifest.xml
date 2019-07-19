@@ -56,7 +56,9 @@
         <activity
             android:name=".PayToFavouriteAccountActivity2"
             android:parentActivityName=".PayToFavouriteAccountActivity1" />
-        <activity android:name=".PayToFavouriteAccountActivity3"></activity>
+        <activity android:name=".PayToFavouriteAccountActivity3"
+            android:parentActivityName=".PayToFavouriteAccountActivity2" />
+
     </application>
 
 </manifest>
