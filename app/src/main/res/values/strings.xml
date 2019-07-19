@@ -239,4 +239,10 @@
     </string-array>
     <string name="bank_prompt">Choose a bank</string>
 
+    <string name="account_no">Account No.</string>
+    <string name="amount_rm">Amount (RM)</string>
+    <string name="tac">TAC</string>
+    <string name="resend">Resend</string>
+    <string name="send">Send</string>
+    <string name="confirm">Confirm</string>
 </resources>
