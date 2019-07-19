@@ -244,4 +244,11 @@
     <string name="tac">TAC</string>
     <string name="resend">Resend</string>
     <string name="send">Send</string>
+    <string name="bank_app">BANK</string>
+    <string name="forgot_username">Forgot User ID?</string>
+    <string name="register_account">Do not have an account? Register</string>
+    <string name="personal_phrase">Is this your personal phrase?</string>
+    <string name="default_phrase">Hong Wei Tan</string>
+    <string name="payment_successfully">Payment Successfully</string>
+
 </resources>

@@ -39,15 +39,17 @@ public class PayByQRActivity extends AppCompatActivity {
             //if qrcode has nothing in it
             if (result.getContents() == null) {
                 Toast.makeText(this, "Result Not Found", Toast.LENGTH_LONG).show();
+                finish();
             } else {
                 //if qr contains data
                 try {
                     //converting the data to json
                     JSONObject obj = new JSONObject(result.getContents());
                     //setting values to textviews
-                    Intent myIntent = new Intent(this, PayByQR2Activity.class);
-                    myIntent.putExtra(EXTRA_ACCNO, obj.getString("accno"));
-                    startActivity(myIntent);
+                    Intent intent = new Intent(this, PayByQR2Activity.class);
+                    intent.putExtra(EXTRA_ACCNO, obj.getString("accno"));
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
                 } catch (JSONException e) {
                     e.printStackTrace();
                     //if control comes here
@@ -55,10 +57,12 @@ public class PayByQRActivity extends AppCompatActivity {
                     //in this case you can display whatever data is available on the qrcode
                     //to a toast
                     Toast.makeText(this, result.getContents(), Toast.LENGTH_LONG).show();
+                    finish();
                 }
             }
         } else {
             super.onActivityResult(requestCode, resultCode, data);
+            finish();
         }
     }
 

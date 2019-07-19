@@ -24,7 +24,7 @@ public class MakePaymentSelection extends AppCompatActivity {
 
     public void payByQR(final View view){
         Intent intent = new Intent(view.getContext(), PayByQRActivity.class);
-//        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
 }
