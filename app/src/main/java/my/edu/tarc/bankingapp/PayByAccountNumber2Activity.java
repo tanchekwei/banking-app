@@ -2,6 +2,7 @@ package my.edu.tarc.bankingapp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,7 +27,7 @@ public class PayByAccountNumber2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay_by_account_number2);
 
-        getSupportActionBar().setTitle("Pay by Account Number"); // for set actionbar title
+        getSupportActionBar().setTitle("(2/3) Pay to Other Account"); // for set actionbar title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // for add back arrow in action bar
 
         EditText editTextTAC = (EditText) findViewById(R.id.editText_tac);
@@ -72,6 +73,7 @@ public class PayByAccountNumber2Activity extends AppCompatActivity {
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY);
 
-        Toast.makeText(view.getContext(), "TAC sent!", Toast.LENGTH_LONG).show();
+        Snackbar.make(view, "TAC sent to 010-656XXXX", Snackbar.LENGTH_LONG).show();
+//        Toast.makeText(view.getContext(), "TAC sent!", Toast.LENGTH_LONG).show();
     }
 }

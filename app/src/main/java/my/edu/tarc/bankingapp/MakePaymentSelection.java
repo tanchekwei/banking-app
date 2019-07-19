@@ -29,7 +29,7 @@ public class MakePaymentSelection extends AppCompatActivity {
     }
 
     public void payToFavouriteAccount(final View view){
-        Intent intent = new Intent(view.getContext(), PayByQRActivity.class);
+        Intent intent = new Intent(view.getContext(), PayToFavouriteAccountActivity1.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }

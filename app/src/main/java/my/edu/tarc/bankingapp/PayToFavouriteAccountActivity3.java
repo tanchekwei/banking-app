@@ -1,16 +1,10 @@
 package my.edu.tarc.bankingapp;
 
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TableLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.vinay.stepview.HorizontalStepView;
 import com.vinay.stepview.models.Step;
@@ -18,51 +12,14 @@ import com.vinay.stepview.models.Step;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PayByAccountNumber3Activity extends AppCompatActivity {
+public class PayToFavouriteAccountActivity3 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pay_by_account_number3);
-
-        getSupportActionBar().setTitle("(3/3) Pay to Other Account"); // for set actionbar title
+        setContentView(R.layout.activity_pay_to_favourite_account3);
+        getSupportActionBar().setTitle("(3/3) Pay to Favourite Account"); // for set actionbar title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // for add back arrow in action bar
-
-        TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout3);
-        tableLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder mBuilder = new AlertDialog.Builder(PayByAccountNumber3Activity.this);
-                View mView = getLayoutInflater().inflate(R.layout.dialog_save_favourite, null);
-
-                Button buttonSave = (Button) mView.findViewById(R.id.buttonYes);
-                Button buttonNo = (Button) mView.findViewById(R.id.buttonNo);
-
-                buttonSave.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Toast.makeText(v.getContext(), "Saved Successfully.", Toast.LENGTH_LONG).show();
-                        Intent intent = new Intent(v.getContext(), MainActivity.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(intent);
-                    }
-                });
-
-                buttonNo.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(v.getContext(), MainActivity.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(intent);
-
-                    }
-                });
-
-                mBuilder.setView(mView);
-                AlertDialog dialog = mBuilder.create();
-                dialog.show();
-            }
-        });
 
 
         HorizontalStepView stepView = (HorizontalStepView) findViewById(R.id.step_view);
@@ -80,12 +37,12 @@ public class PayByAccountNumber3Activity extends AppCompatActivity {
                 .setNotCompletedStepIcon(ContextCompat.getDrawable(getBaseContext(), R.drawable.ic_radio_button_unchecked_blue_24dp))//设置StepsViewIndicator DefaultIcon
                 .setCompletedStepIcon(ContextCompat.getDrawable(getBaseContext(), R.drawable.ic_check_circle_green_24dp))
                 .setLineLength(60)
-        ;
-    }
+        ;    }
 
     public void complete(final View view){
         Intent intent = new Intent(view.getContext(), MainActivity.class);
 //        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
+
 }

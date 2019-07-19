@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
-        <activity android:name=".PayByQR2Activity"></activity>
+        <activity android:name=".PayByQR2Activity" />
         <activity android:name=".PayByQRActivity" />
         <activity
             android:name=".MainActivity"
@@ -26,25 +26,37 @@
         <activity
             android:name=".MakePaymentSelection"
             android:parentActivityName=".MainActivity" />
-
         <activity
             android:name=".RegisterActivity"
             android:parentActivityName=".LoginActivity" />
-        <activity android:name=".PayByAccountNumber1Activity"
+        <activity
+            android:name=".PayByAccountNumber1Activity"
             android:parentActivityName=".MakePaymentSelection" />
-        <activity android:name=".PayByAccountNumber2Activity"
-            android:parentActivityName=".PayByAccountNumber1Activity" />
-        <activity android:name=".PayByAccountNumber3Activity"
+        <activity
+            android:name=".PayByAccountNumber2Activity"
+            android:parentActivityName=".PayByAccountNumber1Activity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".PayByAccountNumber3Activity"
             android:parentActivityName=".PayByAccountNumber2Activity" />
-        <activity android:name=".RegisterActivity1"
+        <activity
+            android:name=".RegisterActivity1"
             android:parentActivityName=".RegisterActivity" />
-        <activity android:name=".RegisterActivity2"
+        <activity
+            android:name=".RegisterActivity2"
             android:parentActivityName=".RegisterActivity1" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
+        <activity
+            android:name=".PayToFavouriteAccountActivity1"
+            android:parentActivityName=".MakePaymentSelection" />
+        <activity
+            android:name=".PayToFavouriteAccountActivity2"
+            android:parentActivityName=".PayToFavouriteAccountActivity1" />
+        <activity android:name=".PayToFavouriteAccountActivity3"></activity>
     </application>
 
 </manifest>

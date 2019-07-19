@@ -237,8 +237,14 @@
         <item>MBSB Bank Berhad</item>
         <item>Co-op Bank Pertama</item>
     </string-array>
-    <string name="bank_prompt">Choose a bank</string>
 
+    <string-array name="bank_acc">
+        <item>6383 873 227, Tan Han Wei (Maybank)</item>
+        <item>3242 125 763, Tan Han Wei (CIMB Bank)</item>
+        <item>0932 342 345, Tang Zhi Wei (Public Bank)</item>
+    </string-array>
+    <string name="bank_prompt">Choose a bank</string>
+    <string name="acc_prompt">Choose account</string>
     <string name="account_no">Account No.</string>
     <string name="amount_rm">Amount (RM)</string>
     <string name="tac">TAC</string>
