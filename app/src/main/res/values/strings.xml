@@ -251,4 +251,117 @@
     <string name="default_phrase">Hong Wei Tan</string>
     <string name="payment_successfully">Payment Successfully</string>
 
+    <string-array name="ic_type">
+        <item>Identification Type</item>
+        <item>Armed Forced ID No</item>
+        <item>Birth Certificate</item>
+        <item>Idendity Card No</item>
+        <item>Old IC Number</item>
+        <item>Passport</item>
+        <item>Police ID</item>
+    </string-array>
+
+    <string name="id_type">Identification Type</string>
+    <string name="state_type">State</string>
+    <string name="id_no">Identification No</string>
+    <string-array name="state">
+        <item>Please choose state</item>
+        <item>Johor</item>
+        <item>Kedah</item>
+        <item>Kelantan</item>
+        <item>Melaka</item>
+        <item>Negeri Sembilan</item>
+        <item>Pahang</item>
+        <item>Penang</item>
+        <item>Perak</item>
+        <item>Perlis</item>
+        <item>Sabah</item>
+        <item>Sarawak</item>
+        <item>Selangor</item>
+        <item>Terengganu</item>
+    </string-array>
+    <string-array name="empty">
+        <item>Please choose branch</item>
+    </string-array>
+    <string-array name="johor_branch">
+        <item>Johor Bahru</item>
+        <item>Kluang</item>
+        <item>Muar</item>
+    </string-array>
+    <string-array name="kedah_branch">
+        <item>Alor Setar</item>
+        <item>Kulim</item>
+        <item>Langkawi</item>
+    </string-array>
+    <string-array name="kelantan_branch">
+        <item>Please choose branch</item>
+        <item>Machang</item>
+        <item>Pasir Mas</item>
+    </string-array>
+    <string-array name="malacca_branch">
+        <item>Please choose branch</item>
+        <item>Jasin</item>
+        <item>Masjid Tanah</item>
+        <item>Melaka</item>
+    </string-array>
+    <string-array name="ns_branch">
+        <item>Please choose branch</item>
+        <item>Seremban</item>
+        <item>Tampin</item>
+        <item>Port Dickson</item>
+    </string-array>
+    <string-array name="pahang_branch">
+        <item>Please choose branch</item>
+        <item>Kuantan</item>
+        <item>Pekan</item>
+        <item>Raub</item>
+    </string-array>
+    <string-array name="penang_branch">
+        <item>Please choose branch</item>
+        <item>GeorgeTown</item>
+        <item>Butter Worth</item>
+        <item>Bayan Baru</item>
+    </string-array>
+    <string-array name="perak_branch">
+        <item>Please choose branch</item>
+        <item>Ipoh</item>
+        <item>Taping</item>
+        <item>Teluk Intan</item>
+    </string-array>
+    <string-array name="perlis_branch">
+        <item>Please choose branch</item>
+        <item>Kangar</item>
+    </string-array>
+    <string-array name="sabah_branch">
+        <item>Please choose branch</item>
+        <item>Kota Kinabalu</item>
+        <item>Sandakan</item>
+        <item>Tawau</item>
+    </string-array>
+    <string-array name="sarawak_branch">
+        <item>Please choose branch</item>
+        <item>Kuching</item>
+        <item>Miri</item>
+        <item>Sibu</item>
+    </string-array>
+    <string-array name="selangor_state">
+        <item>Please choose branch</item>
+        <item>Ampang</item>
+        <item>Petaling Jaya</item>
+        <item>Shah Alam</item>
+    </string-array>
+    <string-array name="terengganu_branch">
+        <item>Please choose branch</item>
+        <item>Dungun</item>
+        <item>Jerteh</item>
+        <item>Kuala Terengganu</item>
+    </string-array>
+    <string-array name="relation">
+        <item>Please choose relation</item>
+        <item>Husband</item>
+        <item>Wife</item>
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Kid</item>
+    </string-array>
 </resources>

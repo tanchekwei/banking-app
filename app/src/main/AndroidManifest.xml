@@ -36,6 +36,10 @@
             android:parentActivityName=".PayByAccountNumber1Activity" />
         <activity android:name=".PayByAccountNumber3Activity"
             android:parentActivityName=".PayByAccountNumber2Activity" />
+        <activity android:name=".RegisterActivity1"
+            android:parentActivityName=".RegisterActivity" />
+        <activity android:name=".RegisterActivity2"
+            android:parentActivityName=".RegisterActivity1" />
 
         <meta-data
             android:name="preloaded_fonts"

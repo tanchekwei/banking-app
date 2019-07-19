@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity1">
+
+    <com.vinay.stepview.HorizontalStepView
+        android:id="@+id/step_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step_view">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <TextView
+                android:id="@+id/textView_fullName"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Full Name"
+                android:textSize="18sp"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp" />
+
+            <EditText
+                android:id="@+id/editText_fullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textCapCharacters" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <TextView
+                android:id="@+id/textView_icType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/id_type"
+                android:textSize="18sp"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/ic_type"
+                android:spinnerMode="dialog" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/textView_IC"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp"
+                android:text="@string/id_no"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editText_IC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <TextView
+                android:id="@+id/textView_gender"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/cap_gender"
+                android:textSize="18sp"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp" />
+
+            <RadioGroup
+                android:id="@+id/sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female" />
+
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <TextView
+                android:id="@+id/textView_address"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Address"
+                android:textSize="18sp"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp" />
+
+            <EditText
+                android:id="@+id/editText_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <TextView
+                android:id="@+id/textView_address1"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text=""
+                android:textSize="18sp"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp" />
+
+            <EditText
+                android:id="@+id/editText_address1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <TextView
+                android:id="@+id/textView_postal"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Postal"
+                android:textSize="18sp"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp" />
+
+            <EditText
+                android:id="@+id/editText_postal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <TextView
+                android:id="@+id/textView_state"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/state_type"
+                android:textSize="18sp"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp" />
+
+            <Spinner
+                android:id="@+id/spinnerState"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/state"
+                android:spinnerMode="dialog" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <TextView
+                android:id="@+id/textView_preferred_branch"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Preferred branch"
+                android:textSize="18sp"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp" />
+
+            <Spinner
+                android:id="@+id/spinnerBranch"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/empty"
+                android:spinnerMode="dialog" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <TextView
+                android:id="@+id/textView_email"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/email_address"
+                android:textSize="18sp"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp" />
+
+            <EditText
+                android:id="@+id/editText_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <TextView
+                android:id="@+id/textView_contact"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/contact_no"
+                android:textSize="18sp"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp" />
+
+            <EditText
+                android:id="@+id/editText_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="next"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout11" />
+
+</android.support.constraint.ConstraintLayout>
