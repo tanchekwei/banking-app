@@ -107,6 +107,8 @@
         android:text="@string/next"
         android:textAllCaps="false"
         android:textSize="18sp"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/secondaryTextColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.1"

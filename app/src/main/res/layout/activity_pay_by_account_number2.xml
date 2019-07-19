@@ -170,6 +170,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="sendTAC"
+                android:background="@drawable/button_shape"
+                android:textColor="@color/secondaryTextColor"
                 android:text="Request TAC"
                 android:textAllCaps="false" />
 
@@ -187,6 +189,8 @@
         android:text="@string/next"
         android:textAllCaps="false"
         android:textSize="18sp"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/secondaryTextColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.1"

@@ -1,10 +1,16 @@
 package my.edu.tarc.bankingapp;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TableLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.vinay.stepview.HorizontalStepView;
 import com.vinay.stepview.models.Step;
@@ -21,6 +27,43 @@ public class PayByAccountNumber3Activity extends AppCompatActivity {
 
         getSupportActionBar().setTitle("Pay by Account Number"); // for set actionbar title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // for add back arrow in action bar
+
+        TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout3);
+        tableLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder mBuilder = new AlertDialog.Builder(PayByAccountNumber3Activity.this);
+                View mView = getLayoutInflater().inflate(R.layout.dialog_save_favourite, null);
+
+                Button buttonSave = (Button) mView.findViewById(R.id.buttonYes);
+                Button buttonNo = (Button) mView.findViewById(R.id.buttonNo);
+
+                buttonSave.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(v.getContext(), "Saved Successfully.", Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(v.getContext(), MainActivity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent);
+                    }
+                });
+
+                buttonNo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(v.getContext(), MainActivity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent);
+
+                    }
+                });
+
+                mBuilder.setView(mView);
+                AlertDialog dialog = mBuilder.create();
+                dialog.show();
+            }
+        });
+
 
         HorizontalStepView stepView = (HorizontalStepView) findViewById(R.id.step_view);
         List<Step> stepList = new ArrayList<>();

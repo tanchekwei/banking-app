@@ -79,7 +79,7 @@
                 android:gravity="center"
                 android:paddingStart="0dp"
                 android:paddingEnd="20dp"
-                android:text="   Your current balance is RM 2,365.23"
+                android:text="   Your new balance is RM 2,365.23"
                 android:textAlignment="center"
                 android:textColor="@color/primaryTextColor"
                 android:textSize="15sp" />
@@ -99,6 +99,8 @@
         android:text="Back to Main Menu"
         android:textAllCaps="false"
         android:textSize="18sp"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/secondaryTextColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.1"
