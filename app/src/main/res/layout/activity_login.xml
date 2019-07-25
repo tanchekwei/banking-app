@@ -73,25 +73,22 @@
             android:layout_marginRight="50dp"
             android:textAllCaps="false"/>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_register"
-            android:background="@drawable/button_shape"
-            android:text="Register"
-            android:textColor="@color/secondaryTextColor"
-            android:textSize="25dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:textAllCaps="false"/>
+            android:id="@+id/textView_reg"
+            android:layout_marginTop="30dp"
+            android:text="@string/reg_new_acc"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView_forgotPw"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:text="@string/forgot_username"
             android:textSize="15dp"
             android:textAlignment="center"
