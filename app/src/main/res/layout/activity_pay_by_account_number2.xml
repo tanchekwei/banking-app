@@ -40,7 +40,8 @@
                 android:paddingStart="0dp"
                 android:paddingEnd="20dp"
                 android:text="Selected bank"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView_selected_bank"
@@ -65,7 +66,8 @@
                 android:paddingStart="0dp"
                 android:paddingEnd="20dp"
                 android:text="Account number"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView_entered_account_number"
@@ -90,7 +92,8 @@
                 android:paddingStart="0dp"
                 android:paddingEnd="20dp"
                 android:text="Account name"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView_entered_account_name"
@@ -115,7 +118,8 @@
                 android:paddingStart="0dp"
                 android:paddingEnd="20dp"
                 android:text="Amount"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView_entered_amount"
@@ -140,7 +144,8 @@
                 android:paddingStart="0dp"
                 android:paddingEnd="20dp"
                 android:text="TAC"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editText_tac"

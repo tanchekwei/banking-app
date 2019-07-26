@@ -29,7 +29,7 @@ public class PayByAccountNumber1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay_by_account_number1);
 
-        getSupportActionBar().setTitle("(1/3) Pay to Other Account"); // for set actionbar title
+        getSupportActionBar().setTitle("Pay to Other Account"); // for set actionbar title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // for add back arrow in action bar
 
         EditText editTextTAC = (EditText) findViewById(R.id.editText_amount);

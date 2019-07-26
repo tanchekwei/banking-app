@@ -23,7 +23,7 @@ public class PayToFavouriteAccountActivity1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay_to_favourite_account1);
 
-        getSupportActionBar().setTitle("(1/3) Pay to Favourite Account"); // for set actionbar title
+        getSupportActionBar().setTitle("Pay to Favourite Account"); // for set actionbar title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // for add back arrow in action bar
 
 

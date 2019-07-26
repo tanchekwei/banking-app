@@ -25,7 +25,8 @@ public class PayByAccountNumber3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay_by_account_number3);
 
-        getSupportActionBar().setTitle("(3/3) Pay to Other Account"); // for set actionbar title
+
+        getSupportActionBar().setTitle("Pay to Other Account"); // for set actionbar title
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // for add back arrow in action bar
 
         TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout3);
@@ -58,7 +59,14 @@ public class PayByAccountNumber3Activity extends AppCompatActivity {
                     }
                 });
 
+
+                View customTitleView = getLayoutInflater().inflate(R.layout.dialog_header, null);
+                TextView title = (TextView) customTitleView.findViewById(R.id.title);
+                title.setText("Save to Favourite Account?");
+
+                mBuilder.setCustomTitle(customTitleView);
                 mBuilder.setView(mView);
+//                mBuilder.setTitle("Save to Favourite Account?");
                 AlertDialog dialog = mBuilder.create();
                 dialog.show();
             }

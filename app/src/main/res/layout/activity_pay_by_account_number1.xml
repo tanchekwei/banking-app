@@ -40,7 +40,8 @@
                 android:paddingStart="0dp"
                 android:paddingEnd="20dp"
                 android:text="Select bank"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <Spinner
                 android:id="@+id/spinner"
@@ -64,7 +65,8 @@
                 android:paddingStart="0dp"
                 android:paddingEnd="20dp"
                 android:text="Account number"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editText_name"
@@ -86,7 +88,8 @@
                 android:paddingStart="0dp"
                 android:paddingEnd="20dp"
                 android:text="Amount (RM)"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editText_amount"
