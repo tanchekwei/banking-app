@@ -1,6 +1,7 @@
 package my.edu.tarc.bankingapp;
 
 import android.content.Intent;
+import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,6 +20,7 @@ public class LoginActivity extends AppCompatActivity{
     EditText editTextUsername;
     RadioButton radioButtonYes, radioButtonNo;
     EditText editTextPw;
+    TextInputLayout textInputLayoutUserID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,7 @@ public class LoginActivity extends AppCompatActivity{
         btnNext = findViewById(R.id.btn_next);
         txtViewReg = findViewById(R.id.textView_reg);
         editTextUsername = findViewById(R.id.editText_username);
+        textInputLayoutUserID = findViewById(R.id.inputLayout_username);
 
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,7 +38,8 @@ public class LoginActivity extends AppCompatActivity{
                 String username = editTextUsername.getText().toString();
 
                 if(username.isEmpty() == true){
-                    Toast.makeText(getApplicationContext(), "Please enter your user ID.", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(), "Please enter your user ID.", Toast.LENGTH_SHORT).show();
+                    textInputLayoutUserID.setError("Please enter your User ID.");
                 }else{
                     AlertDialog.Builder mBuilder = new AlertDialog.Builder(LoginActivity.this);
                     final View mView = getLayoutInflater().inflate(R.layout.dialog_login, null);

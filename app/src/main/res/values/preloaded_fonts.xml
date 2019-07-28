@@ -2,6 +2,7 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/amarante</item>
+        <item>@font/arimo_bold</item>
         <item>@font/bowlby_one</item>
         <item>@font/chango</item>
         <item>@font/cherry_cream_soda</item>
