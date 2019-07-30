@@ -17,11 +17,14 @@ public class PayByQR2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_pay_by_qr2);
 
         Intent intent = getIntent();
-        String message = intent.getStringExtra(PayByQRActivity.EXTRA_ACCNO);
+        String msg_accno = intent.getStringExtra(PayByQRActivity.EXTRA_ACCNO);
+        String msg_recip = intent.getStringExtra(PayByQRActivity.EXTRA_RECIP);
 
         // Capture the layout's TextView and set the string as its text
-        TextView textView = findViewById(R.id.tvAccNo);
-        textView.setText(message);
+        TextView tvAccNo = findViewById(R.id.tvAccNo);
+        TextView tvRecip = findViewById(R.id.tvRecipient);
+        tvAccNo.setText(msg_accno);
+        tvRecip.setText(msg_recip);
 
         Button btnConfirmPay = findViewById(R.id.btnConfirmPay);
 

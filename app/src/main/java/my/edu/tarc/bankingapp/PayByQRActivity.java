@@ -18,6 +18,7 @@ import android.os.Bundle;
 
 public class PayByQRActivity extends AppCompatActivity {
     public static final String EXTRA_ACCNO = "EXTRA_ACCNO";
+    public static final String EXTRA_RECIP = "EXTRA_RECIP";
     //qr code scanner object
     private IntentIntegrator qrScan;
 
@@ -28,6 +29,11 @@ public class PayByQRActivity extends AppCompatActivity {
 
         //intializing scan object
         qrScan = new IntentIntegrator(this);
+        qrScan.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);
+        qrScan.setCaptureActivity(CaptureActivityPortrait.class);
+        qrScan.setPrompt("Please scan the QR code to pay.");
+        qrScan.setOrientationLocked(false);
+        qrScan.setBeepEnabled(false);
         qrScan.initiateScan();
     }
 
@@ -48,6 +54,7 @@ public class PayByQRActivity extends AppCompatActivity {
                     //setting values to textviews
                     Intent intent = new Intent(this, PayByQR2Activity.class);
                     intent.putExtra(EXTRA_ACCNO, obj.getString("accno"));
+                    intent.putExtra(EXTRA_RECIP, obj.getString("recip"));
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                 } catch (JSONException e) {

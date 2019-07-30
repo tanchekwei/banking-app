@@ -271,6 +271,8 @@
     <string name="id_type">Identification Type</string>
     <string name="state_type">State</string>
     <string name="id_no">Identification No</string>
+    <string name="request_tac">Request TAC</string>
+    <string name="recipient">Recipient</string>
     <string-array name="state">
         <item>Please choose state</item>
         <item>Johor</item>
