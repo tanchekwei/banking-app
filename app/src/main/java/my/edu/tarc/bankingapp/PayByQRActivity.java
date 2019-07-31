@@ -27,6 +27,9 @@ public class PayByQRActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay_by_qr);
 
+        getSupportActionBar().setTitle("Pay by QR Code"); // for set actionbar title
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // for add back arrow in action bar
+
         //intializing scan object
         qrScan = new IntentIntegrator(this);
         qrScan.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);
