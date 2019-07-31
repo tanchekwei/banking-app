@@ -18,7 +18,7 @@
         android:text="@string/payment_successfully"
         android:textAlignment="center"
         android:textColor="@color/primaryTextColor"
-        android:textSize="25dp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -54,13 +54,13 @@
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/button_shape"
-        android:text="@string/ok"
+        android:text="@string/back_to_main_menu"
         android:textColor="@color/secondaryTextColor"
-        android:textSize="25dp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/labelPaySuccess" />
+        app:layout_constraintTop_toBottomOf="@+id/tvPaySuccessMsg" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -73,6 +73,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_check_circle_green_24dp" />
+
+    <TextView
+        android:id="@+id/tvPaySuccessMsg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:textAlignment="center"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelPaySuccess" />
 
 
 </android.support.constraint.ConstraintLayout>
