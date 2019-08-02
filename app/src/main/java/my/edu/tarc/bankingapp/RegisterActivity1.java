@@ -29,9 +29,9 @@ public class RegisterActivity1 extends AppCompatActivity implements AdapterView.
 
         HorizontalStepView stepView = (HorizontalStepView) findViewById(R.id.step_view);
         List<Step> stepList = new ArrayList<>();
-        stepList.add(new Step("User Login\n   Detail",Step.State.COMPLETED));
-        stepList.add(new Step("Personal\n Detail", Step.State.CURRENT));
-        stepList.add(new Step("Emergency\n Contact\n Detail"));
+        stepList.add(new Step("Login\nDetail", Step.State.COMPLETED));
+        stepList.add(new Step("Personal\n  Detail", Step.State.CURRENT));
+        stepList.add(new Step("Emergency\n  Contact"));
 
         stepView.setSteps(stepList).setTextSize(13)
                 .setCompletedLineColor(ContextCompat.getColor(getBaseContext(), android.R.color.black))//set StepsViewIndicator完成线的颜色

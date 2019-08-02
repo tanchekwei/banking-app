@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.vinay.stepview.HorizontalStepView;
 import com.vinay.stepview.models.Step;
@@ -27,9 +28,9 @@ public class RegisterActivity2 extends AppCompatActivity {
 
         HorizontalStepView stepView = (HorizontalStepView) findViewById(R.id.step_view);
         List<Step> stepList = new ArrayList<>();
-        stepList.add(new Step("User Login\n   Detail",Step.State.COMPLETED));
-        stepList.add(new Step("Personal\n Detail",Step.State.COMPLETED));
-        stepList.add(new Step("Emergency\n Contact\n Detail", Step.State.CURRENT));
+        stepList.add(new Step("Login\nDetail", Step.State.COMPLETED));
+        stepList.add(new Step("Personal\n  Detail", Step.State.COMPLETED));
+        stepList.add(new Step("Emergency\n  Contact", Step.State.CURRENT));
 
         stepView.setSteps(stepList).setTextSize(13)
                 .setCompletedLineColor(ContextCompat.getColor(getBaseContext(), android.R.color.black))//set StepsViewIndicator完成线的颜色
@@ -47,6 +48,11 @@ public class RegisterActivity2 extends AppCompatActivity {
                 AlertDialog.Builder mBuilder = new AlertDialog.Builder(RegisterActivity2.this);
                 View mView = getLayoutInflater().inflate(R.layout.dialog_register, null);
                 Button btnOK = mView.findViewById(R.id.btn_OK);
+
+                View customTitleView = getLayoutInflater().inflate(R.layout.dialog_header, null);
+                TextView title = (TextView) customTitleView.findViewById(R.id.title);
+                title.setText("Account created successfully");
+                mBuilder.setCustomTitle(customTitleView);
 
                 mBuilder.setView(mView);
                 AlertDialog dialog = mBuilder.create();

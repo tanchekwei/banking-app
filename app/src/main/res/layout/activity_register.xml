@@ -30,6 +30,27 @@
             android:padding="5sp">
 
             <TextView
+                android:id="@+id/textView_instruc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp"
+                android:text="* All fields is required"
+                android:textAlignment="textStart"
+                android:textColor="#CC0000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <TextView
                 android:id="@+id/textView_username"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"

@@ -15,26 +15,38 @@
         android:layout_marginRight="8dp">
 
         <TextView
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Your account has created successfully"
-            android:textSize="25dp"
+            android:text="Reference code: Q98K3E9F5"
             android:textAlignment="center"
-            android:textColor="@color/primaryTextColor"/>
+            android:textColor="@color/primaryTextColor"
+            android:textSize="25dp"
+            android:textStyle="bold" />
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Please visit your preferred branch with this code to confirm your account."
+            android:textAlignment="center"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="18sp" />
+
+        <Button
             android:id="@+id/btn_OK"
-            android:background="@drawable/button_shape"
-            android:text="Back to Main Menu"
-            android:textColor="@color/secondaryTextColor"
-            android:textSize="25dp"
-            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
             android:layout_marginRight="50dp"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_shape"
+            android:text="Save Reference Code"
+            android:textAllCaps="false"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="18sp" />
     </LinearLayout>
 
 </ScrollView>
