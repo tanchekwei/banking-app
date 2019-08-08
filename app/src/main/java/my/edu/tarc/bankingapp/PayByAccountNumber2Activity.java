@@ -62,6 +62,9 @@ public class PayByAccountNumber2Activity extends AppCompatActivity {
     }
 
     public void next(final View view) {
+        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+
         Intent intent = new Intent(view.getContext(), PayByAccountNumber3Activity.class);
 //        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);

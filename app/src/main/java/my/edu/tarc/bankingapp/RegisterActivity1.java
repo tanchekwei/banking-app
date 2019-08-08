@@ -82,7 +82,7 @@ public class RegisterActivity1 extends AppCompatActivity implements AdapterView.
 
             spinnerCity.setAdapter(adapter);
 
-        }else if (pos == 2) {
+        } else if (pos == 2) {
 
             ArrayAdapter<CharSequence> adapter = ArrayAdapter
 
@@ -96,7 +96,7 @@ public class RegisterActivity1 extends AppCompatActivity implements AdapterView.
 
             ArrayAdapter<CharSequence> adapter = ArrayAdapter
 
-                    .createFromResource(this, R.array.kelantan_branch,
+                    .createFromResource(this, R.array.kuala_lumpu_branch,
 
                             android.R.layout.simple_spinner_item);
 
@@ -152,7 +152,7 @@ public class RegisterActivity1 extends AppCompatActivity implements AdapterView.
 
             spinnerCity.setAdapter(adapter);
 
-        }else if (pos == 9) {
+        } else if (pos == 9) {
 
             ArrayAdapter<CharSequence> adapter = ArrayAdapter
 
@@ -197,6 +197,16 @@ public class RegisterActivity1 extends AppCompatActivity implements AdapterView.
             ArrayAdapter<CharSequence> adapter = ArrayAdapter
 
                     .createFromResource(this, R.array.terengganu_branch,
+
+                            android.R.layout.simple_spinner_item);
+
+            spinnerCity.setAdapter(adapter);
+
+        }else if (pos == 14) {
+
+            ArrayAdapter<CharSequence> adapter = ArrayAdapter
+
+                    .createFromResource(this, R.array.kelantan_branch,
 
                             android.R.layout.simple_spinner_item);
 

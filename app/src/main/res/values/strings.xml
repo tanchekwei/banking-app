@@ -278,7 +278,7 @@
         <item>Please choose state</item>
         <item>Johor</item>
         <item>Kedah</item>
-        <item>Kelantan</item>
+        <item>Kuala Lumpur</item>
         <item>Melaka</item>
         <item>Negeri Sembilan</item>
         <item>Pahang</item>
@@ -289,9 +289,16 @@
         <item>Sarawak</item>
         <item>Selangor</item>
         <item>Terengganu</item>
+        <item>Kelantan</item>
     </string-array>
     <string-array name="empty">
         <item>Please choose branch</item>
+    </string-array>
+    <string-array name="kuala_lumpu_branch">
+        <item>Kepong</item>
+        <item>Setapak</item>
+        <item>JinJang</item>
+        <item>Batu Cave</item>
     </string-array>
     <string-array name="johor_branch">
         <item>Johor Bahru</item>
