@@ -50,7 +50,8 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="5sp">
+            android:padding="5sp"
+            >
 
             <TextView
                 android:id="@+id/textView_icType"
@@ -74,9 +75,13 @@
         <TableRow
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10sp">
+            android:padding="10sp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            >
 
-            <TextView
+
+        <TextView
                 android:id="@+id/textView_IC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -218,7 +223,11 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="5sp">
+            android:padding="5sp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            >
+
 
             <TextView
                 android:id="@+id/textView_state"
@@ -241,9 +250,13 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="5sp">
+            android:padding="5sp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            >
 
-            <TextView
+
+        <TextView
                 android:id="@+id/textView_preferred_branch"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
@@ -256,6 +269,8 @@
             <Spinner
                 android:id="@+id/spinnerBranch"
                 android:layout_width="225dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
                 android:layout_height="wrap_content"
                 android:entries="@array/empty"
                 android:spinnerMode="dialog" />
@@ -264,7 +279,10 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="5sp">
+            android:padding="5sp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            >
 
             <TextView
                 android:id="@+id/textView_email"
@@ -288,9 +306,13 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="5sp">
+            android:padding="5sp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            >
 
-            <TextView
+
+        <TextView
                 android:id="@+id/textView_contact"
                 android:layout_width="154dp"
                 android:layout_height="wrap_content"
@@ -314,11 +336,9 @@
     <Button
         android:id="@+id/btn_next"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="7dp"
-        android:layout_marginTop="0dp"
         android:layout_marginEnd="7dp"
-        android:layout_marginBottom="7dp"
         android:background="@drawable/button_shape"
         android:onClick="next"
         android:text="@string/next"

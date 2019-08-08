@@ -68,7 +68,7 @@ public class RegisterActivity1 extends AppCompatActivity implements AdapterView.
 
                     .createFromResource(this, R.array.empty,
 
-                            android.R.layout.simple_spinner_item);
+                            android.R.layout.simple_spinner_dropdown_item);
 
             spinnerCity.setAdapter(adapter);
 
@@ -78,7 +78,7 @@ public class RegisterActivity1 extends AppCompatActivity implements AdapterView.
 
                     .createFromResource(this, R.array.kedah_branch,
 
-                            android.R.layout.simple_spinner_item);
+                            android.R.layout.simple_spinner_dropdown_item);
 
             spinnerCity.setAdapter(adapter);
 
@@ -88,7 +88,7 @@ public class RegisterActivity1 extends AppCompatActivity implements AdapterView.
 
                     .createFromResource(this, R.array.kedah_branch,
 
-                            android.R.layout.simple_spinner_item);
+                            android.R.layout.simple_spinner_dropdown_item);
 
             spinnerCity.setAdapter(adapter);
 
@@ -98,7 +98,7 @@ public class RegisterActivity1 extends AppCompatActivity implements AdapterView.
 
                     .createFromResource(this, R.array.kuala_lumpu_branch,
 
-                            android.R.layout.simple_spinner_item);
+                            android.R.layout.simple_spinner_dropdown_item);
 
             spinnerCity.setAdapter(adapter);
 
@@ -108,7 +108,7 @@ public class RegisterActivity1 extends AppCompatActivity implements AdapterView.
 
                     .createFromResource(this, R.array.malacca_branch,
 
-                            android.R.layout.simple_spinner_item);
+                            android.R.layout.simple_spinner_dropdown_item);
 
             spinnerCity.setAdapter(adapter);
 
@@ -118,7 +118,7 @@ public class RegisterActivity1 extends AppCompatActivity implements AdapterView.
 
                     .createFromResource(this, R.array.ns_branch,
 
-                            android.R.layout.simple_spinner_item);
+                            android.R.layout.simple_spinner_dropdown_item);
 
             spinnerCity.setAdapter(adapter);
 
@@ -128,7 +128,7 @@ public class RegisterActivity1 extends AppCompatActivity implements AdapterView.
 
                     .createFromResource(this, R.array.pahang_branch,
 
-                            android.R.layout.simple_spinner_item);
+                            android.R.layout.simple_spinner_dropdown_item);
 
             spinnerCity.setAdapter(adapter);
 
@@ -148,7 +148,7 @@ public class RegisterActivity1 extends AppCompatActivity implements AdapterView.
 
                     .createFromResource(this, R.array.perak_branch,
 
-                            android.R.layout.simple_spinner_item);
+                            android.R.layout.simple_spinner_dropdown_item);
 
             spinnerCity.setAdapter(adapter);
 
@@ -158,7 +158,7 @@ public class RegisterActivity1 extends AppCompatActivity implements AdapterView.
 
                     .createFromResource(this, R.array.perlis_branch,
 
-                            android.R.layout.simple_spinner_item);
+                            android.R.layout.simple_spinner_dropdown_item);
 
             spinnerCity.setAdapter(adapter);
 
@@ -168,7 +168,7 @@ public class RegisterActivity1 extends AppCompatActivity implements AdapterView.
 
                     .createFromResource(this, R.array.sabah_branch,
 
-                            android.R.layout.simple_spinner_item);
+                            android.R.layout.simple_spinner_dropdown_item);
 
             spinnerCity.setAdapter(adapter);
 
@@ -178,7 +178,7 @@ public class RegisterActivity1 extends AppCompatActivity implements AdapterView.
 
                     .createFromResource(this, R.array.sarawak_branch,
 
-                            android.R.layout.simple_spinner_item);
+                            android.R.layout.simple_spinner_dropdown_item);
 
             spinnerCity.setAdapter(adapter);
 
@@ -188,7 +188,7 @@ public class RegisterActivity1 extends AppCompatActivity implements AdapterView.
 
                     .createFromResource(this, R.array.selangor_state,
 
-                            android.R.layout.simple_spinner_item);
+                            android.R.layout.simple_spinner_dropdown_item);
 
             spinnerCity.setAdapter(adapter);
 
@@ -198,17 +198,17 @@ public class RegisterActivity1 extends AppCompatActivity implements AdapterView.
 
                     .createFromResource(this, R.array.terengganu_branch,
 
-                            android.R.layout.simple_spinner_item);
+                            android.R.layout.simple_spinner_dropdown_item);
 
             spinnerCity.setAdapter(adapter);
 
-        }else if (pos == 14) {
+        } else if (pos == 14) {
 
             ArrayAdapter<CharSequence> adapter = ArrayAdapter
 
                     .createFromResource(this, R.array.kelantan_branch,
 
-                            android.R.layout.simple_spinner_item);
+                            android.R.layout.simple_spinner_dropdown_item);
 
             spinnerCity.setAdapter(adapter);
 

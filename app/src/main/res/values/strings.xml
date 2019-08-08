@@ -295,6 +295,7 @@
         <item>Please choose branch</item>
     </string-array>
     <string-array name="kuala_lumpu_branch">
+        <item>Please choose branch</item>
         <item>Kepong</item>
         <item>Setapak</item>
         <item>JinJang</item>
